@@ -1,0 +1,875 @@
+-/                                                                                                                          /                                                                                                                          -                                                                                                                          # A tibble: 37 × 4
+   Distributors           `# of Releases` `$Worldwide` `Avg Rating`
+   <chr>                            <dbl>        <dbl>        <dbl>
+ 1 All Other Distributors             101   1248852865         6.06
+ 2 20th Century                         1    397378150         7.1 
+ 3 A24                                  4    224292259         6.99
+ 4 Affirm Films                         1     40392664         8.26
+ 5 Amazon MGM                           3   1248852865         6.93
+ 6 Cineverse                            1    423873817         6.9 
+ 7 CJ CGV                               1     21714524         7.1 
+ 8 CJ ENM                               1     53453611         6.7 
+ 9 Columbia                             3    174973838         6.40
+10 Constant Film                        1     29663607         5.7 
+# ℹ 27 more rows
+# ℹ Use `print(n = ...)` to see more rows
+# A tibble: 37 × 5
+   Distributors           `# of Releases` `$Worldwide` `Avg Rating` Avg_Revenue
+   <chr>                            <dbl>        <dbl>        <dbl>       <dbl>
+ 1 All Other Distributors             101   1248852865         6.06   12364880.
+ 2 20th Century                         1    397378150         7.1   397378150 
+ 3 A24                                  4    224292259         6.99   56073065.
+ 4 Affirm Films                         1     40392664         8.26   40392664 
+ 5 Amazon MGM                           3   1248852865         6.93  416284288.
+ 6 Cineverse                            1    423873817         6.9   423873817 
+ 7 CJ CGV                               1     21714524         7.1    21714524 
+ 8 CJ ENM                               1     53453611         6.7    53453611 
+ 9 Columbia                             3    174973838         6.40   58324613.
+10 Constant Film                        1     29663607         5.7    29663607 
+# ℹ 27 more rows
+# ℹ Use `print(n = ...)` to see more rows
+# A tibble: 37 × 6
+   Distributors           `# of Releases` `$Worldwide` `Avg Rating` Avg_Revenue NameRevenue
+   <chr>                            <dbl>        <dbl>        <dbl>       <dbl> <list>     
+ 1 All Other Distributors             101   1248852865         6.06   12364880. <chr [2]>  
+ 2 20th Century                         1    397378150         7.1   397378150  <chr [2]>  
+ 3 A24                                  4    224292259         6.99   56073065. <chr [2]>  
+ 4 Affirm Films                         1     40392664         8.26   40392664  <chr [2]>  
+ 5 Amazon MGM                           3   1248852865         6.93  416284288. <chr [2]>  
+ 6 Cineverse                            1    423873817         6.9   423873817  <chr [2]>  
+ 7 CJ CGV                               1     21714524         7.1    21714524  <chr [2]>  
+ 8 CJ ENM                               1     53453611         6.7    53453611  <chr [2]>  
+ 9 Columbia                             3    174973838         6.40   58324613. <chr [2]>  
+10 Constant Film                        1     29663607         5.7    29663607  <chr [2]>  
+# ℹ 27 more rows
+# ℹ Use `print(n = ...)` to see more rows
+ Distributors       # of Releases       $Worldwide          Avg Rating     Avg_Revenue       
+ Length:37          Min.   :  1.000   Min.   :2.171e+07   Min.   :0.000   Min.   : 12364880  
+ Class :character   1st Qu.:  1.000   1st Qu.:3.604e+07   1st Qu.:6.590   1st Qu.: 30864331  
+ Mode  :character   Median :  1.000   Median :8.467e+07   Median :6.928   Median : 53453611  
+                    Mean   :  5.405   Mean   :5.323e+08   Mean   :6.782   Mean   :119352304  
+                    3rd Qu.:  4.000   3rd Qu.:3.653e+08   3rd Qu.:7.200   3rd Qu.: 93891418  
+                    Max.   :101.000   Max.   :4.673e+09   Max.   :8.300   Max.   :778898805  
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+ NameRevenue.Length  NameRevenue.Class  NameRevenue.Mode
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+ 2          -none-     character                        
+
+Call:
+lm(formula = `Avg Rating` ~ Avg_Revenue, data = R_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.7214 -0.1561  0.0282  0.4062  1.6026 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 6.674e+00  2.631e-01  25.368   <2e-16 ***
+Avg_Revenue 9.011e-10  1.330e-09   0.678    0.502    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.277 on 35 degrees of freedom
+Multiple R-squared:  0.01295,	Adjusted R-squared:  -0.01525 
+F-statistic: 0.4593 on 1 and 35 DF,  p-value: 0.5024
+
+[1] 0.01295418
+
+Call:
+lm(formula = `Avg Rating` ~ Avg_Revenue + `# of Releases`, data = R_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.7501 -0.1562  0.0485  0.3767  1.5732 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      6.710e+00  2.773e-01  24.198   <2e-16 ***
+Avg_Revenue      8.734e-10  1.346e-09   0.649    0.521    
+`# of Releases` -6.099e-03  1.313e-02  -0.464    0.645    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.291 on 34 degrees of freedom
+Multiple R-squared:  0.01918,	Adjusted R-squared:  -0.03852 
+F-statistic: 0.3324 on 2 and 34 DF,  p-value: 0.7195
+
+[1] 0.01917692
+
+Call:
+lm(formula = `Avg Rating` ~ Avg_Revenue + `# of Releases` + `$Worldwide`, 
+    data = R_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.7479 -0.1359  0.0199  0.3746  1.5717 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      6.716e+00  2.884e-01  23.289   <2e-16 ***
+Avg_Revenue      6.991e-10  2.349e-09   0.298    0.768    
+`# of Releases` -6.707e-03  1.490e-02  -0.450    0.656    
+`$Worldwide`     3.450e-11  3.780e-10   0.091    0.928    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.31 on 33 degrees of freedom
+Multiple R-squared:  0.01942,	Adjusted R-squared:  -0.06972 
+F-statistic: 0.2179 on 3 and 33 DF,  p-value: 0.8833
+
+[1] 0.0194244
+# A tibble: 37 × 2
+   Avg_Revenue `Avg Rating`
+         <dbl>        <dbl>
+ 1   12364880.         6.06
+ 2  397378150          7.1 
+ 3   56073065.         6.99
+ 4   40392664          8.26
+ 5  416284288.         6.93
+ 6  423873817          6.9 
+ 7   21714524          7.1 
+ 8   53453611          6.7 
+ 9   58324613.         6.40
+10   29663607          5.7 
+# ℹ 27 more rows
+# ℹ Use `print(n = ...)` to see more rows
+indexing Box Office Top 200 Movies 2024 Dataset (1).csv [===============================================] 9.89GB/s, eta:  0s                                                                                                                            
+Call:
+lm(formula = Rating ~ `$Worldwide` + Vote_Count, data = full_data)
+
+Residuals:
+ALL 188 residuals are 0: no residual degrees of freedom!
+
+Coefficients: (1 not defined because of singularities)
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                    7.700e+00        NaN     NaN      NaN
+`$Worldwide`$1,698,772,985.00 -1.300e-01        NaN     NaN      NaN
+`$Worldwide`$10,174,418.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$10,176,530.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$10,337,403.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$10,585,957.00    -1.100e-01        NaN     NaN      NaN
+`$Worldwide`$10,740,923.00    -1.500e+00        NaN     NaN      NaN
+`$Worldwide`$10,763,217.00     4.000e-01        NaN     NaN      NaN
+`$Worldwide`$10,824,208.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$100,255,784.00   -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$100,498,764.00   -2.280e+00        NaN     NaN      NaN
+`$Worldwide`$104,793,431.00   -4.900e-01        NaN     NaN      NaN
+`$Worldwide`$108,136,957.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$11,077,140.00    -1.020e+00        NaN     NaN      NaN
+`$Worldwide`$11,100,000.00     1.220e+00        NaN     NaN      NaN
+`$Worldwide`$11,227,393.00    -2.420e+00        NaN     NaN      NaN
+`$Worldwide`$11,239,820.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$11,361,087.00    -1.700e+00        NaN     NaN      NaN
+`$Worldwide`$11,515,634.00    -3.000e-01        NaN     NaN      NaN
+`$Worldwide`$11,676,459.00     1.300e+00        NaN     NaN      NaN
+`$Worldwide`$11,721,425.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$11,873,367.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$11,976,305.00    -2.600e-01        NaN     NaN      NaN
+`$Worldwide`$12,113,004.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$12,121,760.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$12,311,598.00    -1.600e+00        NaN     NaN      NaN
+`$Worldwide`$12,419,513.00    -7.200e-01        NaN     NaN      NaN
+`$Worldwide`$12,648,664.00     3.000e-01        NaN     NaN      NaN
+`$Worldwide`$12,778,206.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$12,886,684.00    -2.500e+00        NaN     NaN      NaN
+`$Worldwide`$12,977,758.00    -1.660e+00        NaN     NaN      NaN
+`$Worldwide`$126,185,957.00   -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$126,942,386.00   -1.080e+00        NaN     NaN      NaN
+`$Worldwide`$129,364,141.00    4.100e-01        NaN     NaN      NaN
+`$Worldwide`$13,222,021.00    -1.120e+00        NaN     NaN      NaN
+`$Worldwide`$13,336,831.00    -3.100e+00        NaN     NaN      NaN
+`$Worldwide`$13,858,876.00    -2.300e+00        NaN     NaN      NaN
+`$Worldwide`$138,083,280.00   -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$14,032,045.00    -1.210e+00        NaN     NaN      NaN
+`$Worldwide`$14,291,561.00    -1.700e-01        NaN     NaN      NaN
+`$Worldwide`$14,439,610.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$14,602,614.00    -1.310e+00        NaN     NaN      NaN
+`$Worldwide`$14,668,098.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$15,188,639.00    -3.500e-01        NaN     NaN      NaN
+`$Worldwide`$15,348,026.00    -1.500e+00        NaN     NaN      NaN
+`$Worldwide`$15,469,415.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$15,900,290.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$152,720,535.00   -3.600e-01        NaN     NaN      NaN
+`$Worldwide`$16,198,576.00     2.000e-01        NaN     NaN      NaN
+`$Worldwide`$16,398,509.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$16,555,362.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$16,573,225.00    -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$17,111,121.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$17,273,502.00    -7.800e-01        NaN     NaN      NaN
+`$Worldwide`$173,775,791.00   -1.900e-01        NaN     NaN      NaN
+`$Worldwide`$18,184,000.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$18,259,571.00    -2.200e+00        NaN     NaN      NaN
+`$Worldwide`$18,456,373.00    -4.260e+00        NaN     NaN      NaN
+`$Worldwide`$180,828,556.00   -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$181,073,291.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$19,077,748.00    -1.060e+00        NaN     NaN      NaN
+`$Worldwide`$19,154,556.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$19,353,760.00     3.000e-01        NaN     NaN      NaN
+`$Worldwide`$19,515,102.00     1.000e-01        NaN     NaN      NaN
+`$Worldwide`$190,309,707.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$20,571,534.00     1.100e-01        NaN     NaN      NaN
+`$Worldwide`$20,590,343.00     1.000e-01        NaN     NaN      NaN
+`$Worldwide`$20,615,744.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$201,967,521.00   -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$206,400,287.00   -2.180e+00        NaN     NaN      NaN
+`$Worldwide`$21,214,331.00    -1.110e+00        NaN     NaN      NaN
+`$Worldwide`$21,309,466.00    -6.500e-01        NaN     NaN      NaN
+`$Worldwide`$21,473,459.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$21,530,578.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$21,714,524.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$210,564,198.00    9.583e-15        NaN     NaN      NaN
+`$Worldwide`$22,057,160.00    -1.310e+00        NaN     NaN      NaN
+`$Worldwide`$22,881,613.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$23,342,264.00    -6.200e-01        NaN     NaN      NaN
+`$Worldwide`$234,572,723.00   -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$24,088,961.00    -1.800e+00        NaN     NaN      NaN
+`$Worldwide`$25,000,869.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$25,331,842.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$25,679,729.00     6.000e-01        NaN     NaN      NaN
+`$Worldwide`$261,786,322.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$27,219,729.00    -7.500e-01        NaN     NaN      NaN
+`$Worldwide`$28,004,162.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$281,460,503.00   -6.600e-01        NaN     NaN      NaN
+`$Worldwide`$29,663,607.00    -2.000e+00        NaN     NaN      NaN
+`$Worldwide`$29,715,044.00    -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$30,107,173.00    -1.270e+00        NaN     NaN      NaN
+`$Worldwide`$30,246,869.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,864,331.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,917,972.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,071,378.00    -1.200e-01        NaN     NaN      NaN
+`$Worldwide`$32,224,616.00    -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$32,227,291.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,978,510.00    -1.910e+00        NaN     NaN      NaN
+`$Worldwide`$324,291,115.00    7.000e-01        NaN     NaN      NaN
+`$Worldwide`$33,271,404.00    -1.220e+00        NaN     NaN      NaN
+`$Worldwide`$33,399,912.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$335,226,293.00   -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$35,271,631.00    -7.700e-01        NaN     NaN      NaN
+`$Worldwide`$35,340,016.00    -1.450e+00        NaN     NaN      NaN
+`$Worldwide`$35,714,047.00    -8.000e-02        NaN     NaN      NaN
+`$Worldwide`$350,865,342.00   -4.700e-01        NaN     NaN      NaN
+`$Worldwide`$350,993,761.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$36,038,764.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$36,087,646.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$37,164,152.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$370,962,265.00   -7.900e-01        NaN     NaN      NaN
+`$Worldwide`$38,235,702.00    -7.100e-01        NaN     NaN      NaN
+`$Worldwide`$39,978,310.00    -3.000e-01        NaN     NaN      NaN
+`$Worldwide`$397,378,150.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$40,392,664.00     5.600e-01        NaN     NaN      NaN
+`$Worldwide`$40,815,190.00     6.000e-02        NaN     NaN      NaN
+`$Worldwide`$404,547,819.00   -2.300e-01        NaN     NaN      NaN
+`$Worldwide`$42,247,783.00    -8.200e-01        NaN     NaN      NaN
+`$Worldwide`$42,791,449.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$43,787,034.00    -1.660e+00        NaN     NaN      NaN
+`$Worldwide`$43,977,764.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$435,153,922.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$44,354,825.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$451,100,435.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$46,393,906.00    -9.500e-01        NaN     NaN      NaN
+`$Worldwide`$476,857,448.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$48,166,448.00    -1.900e+00        NaN     NaN      NaN
+`$Worldwide`$48,324,020.00    -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$48,960,581.00    -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$49,256,239.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$50,996,759.00    -1.030e+00        NaN     NaN      NaN
+`$Worldwide`$52,876,550.00    -1.770e+00        NaN     NaN      NaN
+`$Worldwide`$53,453,611.00    -1.000e+00        NaN     NaN      NaN
+`$Worldwide`$53,845,880.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$54,114,815.00    -7.800e-01        NaN     NaN      NaN
+`$Worldwide`$54,768,317.00    -2.100e+00        NaN     NaN      NaN
+`$Worldwide`$547,689,492.00   -6.300e-01        NaN     NaN      NaN
+`$Worldwide`$57,908,426.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$571,750,016.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$640,176,210.00   -2.900e-01        NaN     NaN      NaN
+`$Worldwide`$7,206,741.00     -1.700e+00        NaN     NaN      NaN
+`$Worldwide`$7,241,561.00     -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$7,305,588.00     -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$7,343,114.00     -3.700e+00        NaN     NaN      NaN
+`$Worldwide`$7,361,414.00     -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$7,387,498.00     -1.000e+00        NaN     NaN      NaN
+`$Worldwide`$7,434,047.00     -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$7,510,050.00     -3.000e+00        NaN     NaN      NaN
+`$Worldwide`$7,614,966.00      1.433e-14        NaN     NaN      NaN
+`$Worldwide`$7,725,143.00     -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$7,796,800.00      2.000e+00        NaN     NaN      NaN
+`$Worldwide`$7,935,363.00     -2.240e+00        NaN     NaN      NaN
+`$Worldwide`$7,942,189.00     -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$714,444,358.00    5.000e-01        NaN     NaN      NaN
+`$Worldwide`$74,978,738.00     4.400e-01        NaN     NaN      NaN
+`$Worldwide`$76,756,109.00    -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$77,770,614.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,022,137.00     -2.200e+00        NaN     NaN      NaN
+`$Worldwide`$8,108,856.00     -1.160e+00        NaN     NaN      NaN
+`$Worldwide`$8,165,361.00     -1.700e+00        NaN     NaN      NaN
+`$Worldwide`$8,335,766.00     -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,353,954.00     -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,484,475.00     -2.500e+00        NaN     NaN      NaN
+`$Worldwide`$8,528,605.00      3.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,551,637.00      1.000e+00        NaN     NaN      NaN
+`$Worldwide`$8,798,081.00     -5.500e-01        NaN     NaN      NaN
+`$Worldwide`$8,799,528.00      1.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,804,443.00     -2.900e+00        NaN     NaN      NaN
+`$Worldwide`$8,809,952.00     -2.900e+00        NaN     NaN      NaN
+`$Worldwide`$8,878,821.00     -8.100e-01        NaN     NaN      NaN
+`$Worldwide`$80,426,848.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$82,677,281.00    -1.300e+00        NaN     NaN      NaN
+`$Worldwide`$84,044,095.00    -5.600e-01        NaN     NaN      NaN
+`$Worldwide`$88,632,979.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$896,608,683.00   -7.400e-01        NaN     NaN      NaN
+`$Worldwide`$9,137,007.00     -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$9,163,586.00     -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$9,201,680.00     -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$9,211,570.00     -1.880e+00        NaN     NaN      NaN
+`$Worldwide`$9,440,754.00     -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$9,655,756.00      1.800e-01        NaN     NaN      NaN
+`$Worldwide`$9,659,440.00     -2.660e+00        NaN     NaN      NaN
+`$Worldwide`$9,802,248.00     -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$9,927,714.00     -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$93,891,418.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,019,408.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,221,061.00    -1.600e+00        NaN     NaN      NaN
+`$Worldwide`$969,126,452.00   -6.000e-01        NaN     NaN      NaN
+Vote_Count                            NA         NA      NA       NA
+
+Residual standard error: NaN on 0 degrees of freedom
+  (12 observations deleted due to missingness)
+Multiple R-squared:      1,	Adjusted R-squared:    NaN 
+F-statistic:   NaN on 187 and 0 DF,  p-value: NA
+
+[1] 1
+
+Call:
+lm(formula = Rating ~ `$Worldwide` + Vote_Count + `Domestic %` + 
+    `Foreign %`, data = full_data)
+
+Residuals:
+ALL 188 residuals are 0: no residual degrees of freedom!
+
+Coefficients: (3 not defined because of singularities)
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                    7.700e+00        NaN     NaN      NaN
+`$Worldwide`$1,698,772,985.00 -1.300e-01        NaN     NaN      NaN
+`$Worldwide`$10,174,418.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$10,176,530.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$10,337,403.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$10,585,957.00    -1.100e-01        NaN     NaN      NaN
+`$Worldwide`$10,740,923.00    -1.500e+00        NaN     NaN      NaN
+`$Worldwide`$10,763,217.00     4.000e-01        NaN     NaN      NaN
+`$Worldwide`$10,824,208.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$100,255,784.00   -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$100,498,764.00   -2.280e+00        NaN     NaN      NaN
+`$Worldwide`$104,793,431.00   -4.900e-01        NaN     NaN      NaN
+`$Worldwide`$108,136,957.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$11,077,140.00    -1.020e+00        NaN     NaN      NaN
+`$Worldwide`$11,100,000.00     1.220e+00        NaN     NaN      NaN
+`$Worldwide`$11,227,393.00    -2.420e+00        NaN     NaN      NaN
+`$Worldwide`$11,239,820.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$11,361,087.00    -1.700e+00        NaN     NaN      NaN
+`$Worldwide`$11,515,634.00    -3.000e-01        NaN     NaN      NaN
+`$Worldwide`$11,676,459.00     1.300e+00        NaN     NaN      NaN
+`$Worldwide`$11,721,425.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$11,873,367.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$11,976,305.00    -2.600e-01        NaN     NaN      NaN
+`$Worldwide`$12,113,004.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$12,121,760.00    -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$12,311,598.00    -1.600e+00        NaN     NaN      NaN
+`$Worldwide`$12,419,513.00    -7.200e-01        NaN     NaN      NaN
+`$Worldwide`$12,648,664.00     3.000e-01        NaN     NaN      NaN
+`$Worldwide`$12,778,206.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$12,886,684.00    -2.500e+00        NaN     NaN      NaN
+`$Worldwide`$12,977,758.00    -1.660e+00        NaN     NaN      NaN
+`$Worldwide`$126,185,957.00   -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$126,942,386.00   -1.080e+00        NaN     NaN      NaN
+`$Worldwide`$129,364,141.00    4.100e-01        NaN     NaN      NaN
+`$Worldwide`$13,222,021.00    -1.120e+00        NaN     NaN      NaN
+`$Worldwide`$13,336,831.00    -3.100e+00        NaN     NaN      NaN
+`$Worldwide`$13,858,876.00    -2.300e+00        NaN     NaN      NaN
+`$Worldwide`$138,083,280.00   -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$14,032,045.00    -1.210e+00        NaN     NaN      NaN
+`$Worldwide`$14,291,561.00    -1.700e-01        NaN     NaN      NaN
+`$Worldwide`$14,439,610.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$14,602,614.00    -1.310e+00        NaN     NaN      NaN
+`$Worldwide`$14,668,098.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$15,188,639.00    -3.500e-01        NaN     NaN      NaN
+`$Worldwide`$15,348,026.00    -1.500e+00        NaN     NaN      NaN
+`$Worldwide`$15,469,415.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$15,900,290.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$152,720,535.00   -3.600e-01        NaN     NaN      NaN
+`$Worldwide`$16,198,576.00     2.000e-01        NaN     NaN      NaN
+`$Worldwide`$16,398,509.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$16,555,362.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$16,573,225.00    -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$17,111,121.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$17,273,502.00    -7.800e-01        NaN     NaN      NaN
+`$Worldwide`$173,775,791.00   -1.900e-01        NaN     NaN      NaN
+`$Worldwide`$18,184,000.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$18,259,571.00    -2.200e+00        NaN     NaN      NaN
+`$Worldwide`$18,456,373.00    -4.260e+00        NaN     NaN      NaN
+`$Worldwide`$180,828,556.00   -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$181,073,291.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$19,077,748.00    -1.060e+00        NaN     NaN      NaN
+`$Worldwide`$19,154,556.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$19,353,760.00     3.000e-01        NaN     NaN      NaN
+`$Worldwide`$19,515,102.00     1.000e-01        NaN     NaN      NaN
+`$Worldwide`$190,309,707.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$20,571,534.00     1.100e-01        NaN     NaN      NaN
+`$Worldwide`$20,590,343.00     1.000e-01        NaN     NaN      NaN
+`$Worldwide`$20,615,744.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$201,967,521.00   -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$206,400,287.00   -2.180e+00        NaN     NaN      NaN
+`$Worldwide`$21,214,331.00    -1.110e+00        NaN     NaN      NaN
+`$Worldwide`$21,309,466.00    -6.500e-01        NaN     NaN      NaN
+`$Worldwide`$21,473,459.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$21,530,578.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$21,714,524.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$210,564,198.00    9.583e-15        NaN     NaN      NaN
+`$Worldwide`$22,057,160.00    -1.310e+00        NaN     NaN      NaN
+`$Worldwide`$22,881,613.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$23,342,264.00    -6.200e-01        NaN     NaN      NaN
+`$Worldwide`$234,572,723.00   -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$24,088,961.00    -1.800e+00        NaN     NaN      NaN
+`$Worldwide`$25,000,869.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$25,331,842.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$25,679,729.00     6.000e-01        NaN     NaN      NaN
+`$Worldwide`$261,786,322.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$27,219,729.00    -7.500e-01        NaN     NaN      NaN
+`$Worldwide`$28,004,162.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$281,460,503.00   -6.600e-01        NaN     NaN      NaN
+`$Worldwide`$29,663,607.00    -2.000e+00        NaN     NaN      NaN
+`$Worldwide`$29,715,044.00    -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$30,107,173.00    -1.270e+00        NaN     NaN      NaN
+`$Worldwide`$30,246,869.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,864,331.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,917,972.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,071,378.00    -1.200e-01        NaN     NaN      NaN
+`$Worldwide`$32,224,616.00    -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$32,227,291.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,978,510.00    -1.910e+00        NaN     NaN      NaN
+`$Worldwide`$324,291,115.00    7.000e-01        NaN     NaN      NaN
+`$Worldwide`$33,271,404.00    -1.220e+00        NaN     NaN      NaN
+`$Worldwide`$33,399,912.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$335,226,293.00   -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$35,271,631.00    -7.700e-01        NaN     NaN      NaN
+`$Worldwide`$35,340,016.00    -1.450e+00        NaN     NaN      NaN
+`$Worldwide`$35,714,047.00    -8.000e-02        NaN     NaN      NaN
+`$Worldwide`$350,865,342.00   -4.700e-01        NaN     NaN      NaN
+`$Worldwide`$350,993,761.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$36,038,764.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$36,087,646.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$37,164,152.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$370,962,265.00   -7.900e-01        NaN     NaN      NaN
+`$Worldwide`$38,235,702.00    -7.100e-01        NaN     NaN      NaN
+`$Worldwide`$39,978,310.00    -3.000e-01        NaN     NaN      NaN
+`$Worldwide`$397,378,150.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$40,392,664.00     5.600e-01        NaN     NaN      NaN
+`$Worldwide`$40,815,190.00     6.000e-02        NaN     NaN      NaN
+`$Worldwide`$404,547,819.00   -2.300e-01        NaN     NaN      NaN
+`$Worldwide`$42,247,783.00    -8.200e-01        NaN     NaN      NaN
+`$Worldwide`$42,791,449.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$43,787,034.00    -1.660e+00        NaN     NaN      NaN
+`$Worldwide`$43,977,764.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$435,153,922.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$44,354,825.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$451,100,435.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$46,393,906.00    -9.500e-01        NaN     NaN      NaN
+`$Worldwide`$476,857,448.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$48,166,448.00    -1.900e+00        NaN     NaN      NaN
+`$Worldwide`$48,324,020.00    -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$48,960,581.00    -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$49,256,239.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$50,996,759.00    -1.030e+00        NaN     NaN      NaN
+`$Worldwide`$52,876,550.00    -1.770e+00        NaN     NaN      NaN
+`$Worldwide`$53,453,611.00    -1.000e+00        NaN     NaN      NaN
+`$Worldwide`$53,845,880.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$54,114,815.00    -7.800e-01        NaN     NaN      NaN
+`$Worldwide`$54,768,317.00    -2.100e+00        NaN     NaN      NaN
+`$Worldwide`$547,689,492.00   -6.300e-01        NaN     NaN      NaN
+`$Worldwide`$57,908,426.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$571,750,016.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$640,176,210.00   -2.900e-01        NaN     NaN      NaN
+`$Worldwide`$7,206,741.00     -1.700e+00        NaN     NaN      NaN
+`$Worldwide`$7,241,561.00     -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$7,305,588.00     -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$7,343,114.00     -3.700e+00        NaN     NaN      NaN
+`$Worldwide`$7,361,414.00     -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$7,387,498.00     -1.000e+00        NaN     NaN      NaN
+`$Worldwide`$7,434,047.00     -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$7,510,050.00     -3.000e+00        NaN     NaN      NaN
+`$Worldwide`$7,614,966.00      1.433e-14        NaN     NaN      NaN
+`$Worldwide`$7,725,143.00     -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$7,796,800.00      2.000e+00        NaN     NaN      NaN
+`$Worldwide`$7,935,363.00     -2.240e+00        NaN     NaN      NaN
+`$Worldwide`$7,942,189.00     -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$714,444,358.00    5.000e-01        NaN     NaN      NaN
+`$Worldwide`$74,978,738.00     4.400e-01        NaN     NaN      NaN
+`$Worldwide`$76,756,109.00    -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$77,770,614.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,022,137.00     -2.200e+00        NaN     NaN      NaN
+`$Worldwide`$8,108,856.00     -1.160e+00        NaN     NaN      NaN
+`$Worldwide`$8,165,361.00     -1.700e+00        NaN     NaN      NaN
+`$Worldwide`$8,335,766.00     -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,353,954.00     -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,484,475.00     -2.500e+00        NaN     NaN      NaN
+`$Worldwide`$8,528,605.00      3.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,551,637.00      1.000e+00        NaN     NaN      NaN
+`$Worldwide`$8,798,081.00     -5.500e-01        NaN     NaN      NaN
+`$Worldwide`$8,799,528.00      1.000e-01        NaN     NaN      NaN
+`$Worldwide`$8,804,443.00     -2.900e+00        NaN     NaN      NaN
+`$Worldwide`$8,809,952.00     -2.900e+00        NaN     NaN      NaN
+`$Worldwide`$8,878,821.00     -8.100e-01        NaN     NaN      NaN
+`$Worldwide`$80,426,848.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$82,677,281.00    -1.300e+00        NaN     NaN      NaN
+`$Worldwide`$84,044,095.00    -5.600e-01        NaN     NaN      NaN
+`$Worldwide`$88,632,979.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$896,608,683.00   -7.400e-01        NaN     NaN      NaN
+`$Worldwide`$9,137,007.00     -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$9,163,586.00     -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$9,201,680.00     -7.700e+00        NaN     NaN      NaN
+`$Worldwide`$9,211,570.00     -1.880e+00        NaN     NaN      NaN
+`$Worldwide`$9,440,754.00     -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$9,655,756.00      1.800e-01        NaN     NaN      NaN
+`$Worldwide`$9,659,440.00     -2.660e+00        NaN     NaN      NaN
+`$Worldwide`$9,802,248.00     -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$9,927,714.00     -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$93,891,418.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,019,408.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,221,061.00    -1.600e+00        NaN     NaN      NaN
+`$Worldwide`$969,126,452.00   -6.000e-01        NaN     NaN      NaN
+Vote_Count                            NA         NA      NA       NA
+`Domestic %`                          NA         NA      NA       NA
+`Foreign %`                           NA         NA      NA       NA
+
+Residual standard error: NaN on 0 degrees of freedom
+  (12 observations deleted due to missingness)
+Multiple R-squared:      1,	Adjusted R-squared:    NaN 
+F-statistic:   NaN on 187 and 0 DF,  p-value: NA
+
+[1] 1
+
+Call:
+lm(formula = Rating ~ `$Worldwide` + Vote_Count, data = new_full)
+
+Residuals:
+ALL 96 residuals are 0: no residual degrees of freedom!
+
+Coefficients: (1 not defined because of singularities)
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                    7.700e+00        NaN     NaN      NaN
+`$Worldwide`$1,698,772,985.00 -1.300e-01        NaN     NaN      NaN
+`$Worldwide`$100,255,784.00   -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$100,498,764.00   -2.280e+00        NaN     NaN      NaN
+`$Worldwide`$104,793,431.00   -4.900e-01        NaN     NaN      NaN
+`$Worldwide`$108,136,957.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$126,185,957.00   -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$126,942,386.00   -1.080e+00        NaN     NaN      NaN
+`$Worldwide`$129,364,141.00    4.100e-01        NaN     NaN      NaN
+`$Worldwide`$138,083,280.00   -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$152,720,535.00   -3.600e-01        NaN     NaN      NaN
+`$Worldwide`$173,775,791.00   -1.900e-01        NaN     NaN      NaN
+`$Worldwide`$180,828,556.00   -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$181,073,291.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$190,309,707.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$201,967,521.00   -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$206,400,287.00   -2.180e+00        NaN     NaN      NaN
+`$Worldwide`$21,714,524.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$210,564,198.00   -2.318e-15        NaN     NaN      NaN
+`$Worldwide`$22,057,160.00    -1.310e+00        NaN     NaN      NaN
+`$Worldwide`$22,881,613.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$23,342,264.00    -6.200e-01        NaN     NaN      NaN
+`$Worldwide`$234,572,723.00   -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$24,088,961.00    -1.800e+00        NaN     NaN      NaN
+`$Worldwide`$25,000,869.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$25,331,842.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$25,679,729.00     6.000e-01        NaN     NaN      NaN
+`$Worldwide`$261,786,322.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$27,219,729.00    -7.500e-01        NaN     NaN      NaN
+`$Worldwide`$28,004,162.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$281,460,503.00   -6.600e-01        NaN     NaN      NaN
+`$Worldwide`$29,663,607.00    -2.000e+00        NaN     NaN      NaN
+`$Worldwide`$29,715,044.00    -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$30,107,173.00    -1.270e+00        NaN     NaN      NaN
+`$Worldwide`$30,246,869.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,864,331.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,917,972.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,071,378.00    -1.200e-01        NaN     NaN      NaN
+`$Worldwide`$32,224,616.00    -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$32,227,291.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,978,510.00    -1.910e+00        NaN     NaN      NaN
+`$Worldwide`$324,291,115.00    7.000e-01        NaN     NaN      NaN
+`$Worldwide`$33,271,404.00    -1.220e+00        NaN     NaN      NaN
+`$Worldwide`$33,399,912.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$335,226,293.00   -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$35,271,631.00    -7.700e-01        NaN     NaN      NaN
+`$Worldwide`$35,340,016.00    -1.450e+00        NaN     NaN      NaN
+`$Worldwide`$35,714,047.00    -8.000e-02        NaN     NaN      NaN
+`$Worldwide`$350,865,342.00   -4.700e-01        NaN     NaN      NaN
+`$Worldwide`$350,993,761.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$36,038,764.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$36,087,646.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$37,164,152.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$370,962,265.00   -7.900e-01        NaN     NaN      NaN
+`$Worldwide`$38,235,702.00    -7.100e-01        NaN     NaN      NaN
+`$Worldwide`$39,978,310.00    -3.000e-01        NaN     NaN      NaN
+`$Worldwide`$397,378,150.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$40,392,664.00     5.600e-01        NaN     NaN      NaN
+`$Worldwide`$40,815,190.00     6.000e-02        NaN     NaN      NaN
+`$Worldwide`$404,547,819.00   -2.300e-01        NaN     NaN      NaN
+`$Worldwide`$42,247,783.00    -8.200e-01        NaN     NaN      NaN
+`$Worldwide`$42,791,449.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$43,787,034.00    -1.660e+00        NaN     NaN      NaN
+`$Worldwide`$43,977,764.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$435,153,922.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$44,354,825.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$451,100,435.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$46,393,906.00    -9.500e-01        NaN     NaN      NaN
+`$Worldwide`$476,857,448.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$48,166,448.00    -1.900e+00        NaN     NaN      NaN
+`$Worldwide`$48,324,020.00    -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$48,960,581.00    -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$49,256,239.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$50,996,759.00    -1.030e+00        NaN     NaN      NaN
+`$Worldwide`$52,876,550.00    -1.770e+00        NaN     NaN      NaN
+`$Worldwide`$53,453,611.00    -1.000e+00        NaN     NaN      NaN
+`$Worldwide`$53,845,880.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$54,114,815.00    -7.800e-01        NaN     NaN      NaN
+`$Worldwide`$54,768,317.00    -2.100e+00        NaN     NaN      NaN
+`$Worldwide`$547,689,492.00   -6.300e-01        NaN     NaN      NaN
+`$Worldwide`$57,908,426.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$571,750,016.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$640,176,210.00   -2.900e-01        NaN     NaN      NaN
+`$Worldwide`$714,444,358.00    5.000e-01        NaN     NaN      NaN
+`$Worldwide`$74,978,738.00     4.400e-01        NaN     NaN      NaN
+`$Worldwide`$76,756,109.00    -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$77,770,614.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$80,426,848.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$82,677,281.00    -1.300e+00        NaN     NaN      NaN
+`$Worldwide`$84,044,095.00    -5.600e-01        NaN     NaN      NaN
+`$Worldwide`$88,632,979.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$896,608,683.00   -7.400e-01        NaN     NaN      NaN
+`$Worldwide`$93,891,418.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,019,408.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,221,061.00    -1.600e+00        NaN     NaN      NaN
+`$Worldwide`$969,126,452.00   -6.000e-01        NaN     NaN      NaN
+Vote_Count                            NA         NA      NA       NA
+
+Residual standard error: NaN on 0 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:    NaN 
+F-statistic:   NaN on 95 and 0 DF,  p-value: NA
+
+[1] 1
+
+Call:
+lm(formula = Rating ~ `$Worldwide` + Vote_Count + `Domestic %` + 
+    `Foreign %`, data = new_full)
+
+Residuals:
+ALL 96 residuals are 0: no residual degrees of freedom!
+
+Coefficients: (3 not defined because of singularities)
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                    7.700e+00        NaN     NaN      NaN
+`$Worldwide`$1,698,772,985.00 -1.300e-01        NaN     NaN      NaN
+`$Worldwide`$100,255,784.00   -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$100,498,764.00   -2.280e+00        NaN     NaN      NaN
+`$Worldwide`$104,793,431.00   -4.900e-01        NaN     NaN      NaN
+`$Worldwide`$108,136,957.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$126,185,957.00   -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$126,942,386.00   -1.080e+00        NaN     NaN      NaN
+`$Worldwide`$129,364,141.00    4.100e-01        NaN     NaN      NaN
+`$Worldwide`$138,083,280.00   -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$152,720,535.00   -3.600e-01        NaN     NaN      NaN
+`$Worldwide`$173,775,791.00   -1.900e-01        NaN     NaN      NaN
+`$Worldwide`$180,828,556.00   -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$181,073,291.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$190,309,707.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$201,967,521.00   -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$206,400,287.00   -2.180e+00        NaN     NaN      NaN
+`$Worldwide`$21,714,524.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$210,564,198.00   -2.318e-15        NaN     NaN      NaN
+`$Worldwide`$22,057,160.00    -1.310e+00        NaN     NaN      NaN
+`$Worldwide`$22,881,613.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$23,342,264.00    -6.200e-01        NaN     NaN      NaN
+`$Worldwide`$234,572,723.00   -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$24,088,961.00    -1.800e+00        NaN     NaN      NaN
+`$Worldwide`$25,000,869.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$25,331,842.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$25,679,729.00     6.000e-01        NaN     NaN      NaN
+`$Worldwide`$261,786,322.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$27,219,729.00    -7.500e-01        NaN     NaN      NaN
+`$Worldwide`$28,004,162.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$281,460,503.00   -6.600e-01        NaN     NaN      NaN
+`$Worldwide`$29,663,607.00    -2.000e+00        NaN     NaN      NaN
+`$Worldwide`$29,715,044.00    -5.800e-01        NaN     NaN      NaN
+`$Worldwide`$30,107,173.00    -1.270e+00        NaN     NaN      NaN
+`$Worldwide`$30,246,869.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,864,331.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$30,917,972.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,071,378.00    -1.200e-01        NaN     NaN      NaN
+`$Worldwide`$32,224,616.00    -9.600e-01        NaN     NaN      NaN
+`$Worldwide`$32,227,291.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$32,978,510.00    -1.910e+00        NaN     NaN      NaN
+`$Worldwide`$324,291,115.00    7.000e-01        NaN     NaN      NaN
+`$Worldwide`$33,271,404.00    -1.220e+00        NaN     NaN      NaN
+`$Worldwide`$33,399,912.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$335,226,293.00   -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$35,271,631.00    -7.700e-01        NaN     NaN      NaN
+`$Worldwide`$35,340,016.00    -1.450e+00        NaN     NaN      NaN
+`$Worldwide`$35,714,047.00    -8.000e-02        NaN     NaN      NaN
+`$Worldwide`$350,865,342.00   -4.700e-01        NaN     NaN      NaN
+`$Worldwide`$350,993,761.00   -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$36,038,764.00    -1.100e+00        NaN     NaN      NaN
+`$Worldwide`$36,087,646.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$37,164,152.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$370,962,265.00   -7.900e-01        NaN     NaN      NaN
+`$Worldwide`$38,235,702.00    -7.100e-01        NaN     NaN      NaN
+`$Worldwide`$39,978,310.00    -3.000e-01        NaN     NaN      NaN
+`$Worldwide`$397,378,150.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$40,392,664.00     5.600e-01        NaN     NaN      NaN
+`$Worldwide`$40,815,190.00     6.000e-02        NaN     NaN      NaN
+`$Worldwide`$404,547,819.00   -2.300e-01        NaN     NaN      NaN
+`$Worldwide`$42,247,783.00    -8.200e-01        NaN     NaN      NaN
+`$Worldwide`$42,791,449.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$43,787,034.00    -1.660e+00        NaN     NaN      NaN
+`$Worldwide`$43,977,764.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$435,153,922.00   -9.200e-01        NaN     NaN      NaN
+`$Worldwide`$44,354,825.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$451,100,435.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$46,393,906.00    -9.500e-01        NaN     NaN      NaN
+`$Worldwide`$476,857,448.00   -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$48,166,448.00    -1.900e+00        NaN     NaN      NaN
+`$Worldwide`$48,324,020.00    -1.400e+00        NaN     NaN      NaN
+`$Worldwide`$48,960,581.00    -2.000e-01        NaN     NaN      NaN
+`$Worldwide`$49,256,239.00    -1.200e+00        NaN     NaN      NaN
+`$Worldwide`$50,996,759.00    -1.030e+00        NaN     NaN      NaN
+`$Worldwide`$52,876,550.00    -1.770e+00        NaN     NaN      NaN
+`$Worldwide`$53,453,611.00    -1.000e+00        NaN     NaN      NaN
+`$Worldwide`$53,845,880.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$54,114,815.00    -7.800e-01        NaN     NaN      NaN
+`$Worldwide`$54,768,317.00    -2.100e+00        NaN     NaN      NaN
+`$Worldwide`$547,689,492.00   -6.300e-01        NaN     NaN      NaN
+`$Worldwide`$57,908,426.00    -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$571,750,016.00   -6.000e-01        NaN     NaN      NaN
+`$Worldwide`$640,176,210.00   -2.900e-01        NaN     NaN      NaN
+`$Worldwide`$714,444,358.00    5.000e-01        NaN     NaN      NaN
+`$Worldwide`$74,978,738.00     4.400e-01        NaN     NaN      NaN
+`$Worldwide`$76,756,109.00    -4.000e-01        NaN     NaN      NaN
+`$Worldwide`$77,770,614.00    -5.000e-01        NaN     NaN      NaN
+`$Worldwide`$80,426,848.00    -9.000e-01        NaN     NaN      NaN
+`$Worldwide`$82,677,281.00    -1.300e+00        NaN     NaN      NaN
+`$Worldwide`$84,044,095.00    -5.600e-01        NaN     NaN      NaN
+`$Worldwide`$88,632,979.00    -8.000e-01        NaN     NaN      NaN
+`$Worldwide`$896,608,683.00   -7.400e-01        NaN     NaN      NaN
+`$Worldwide`$93,891,418.00    -1.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,019,408.00    -7.000e-01        NaN     NaN      NaN
+`$Worldwide`$96,221,061.00    -1.600e+00        NaN     NaN      NaN
+`$Worldwide`$969,126,452.00   -6.000e-01        NaN     NaN      NaN
+Vote_Count                            NA         NA      NA       NA
+`Domestic %`                          NA         NA      NA       NA
+`Foreign %`                           NA         NA      NA       NA
+
+Residual standard error: NaN on 0 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:    NaN 
+F-statistic:   NaN on 95 and 0 DF,  p-value: NA
+
+[1] 1
+# A tibble: 96 × 2
+   `$Worldwide`      Rating
+   <chr>             <chr> 
+ 1 $1,698,772,985.00 7.57  
+ 2 $1,338,073,645.00 7.70  
+ 3 $969,126,452.00   7.10  
+ 4 $896,608,683.00   6.96  
+ 5 $714,444,358.00   8.20  
+ 6 $640,176,210.00   7.41  
+ 7 $571,750,016.00   7.10  
+ 8 $547,689,492.00   7.07  
+ 9 $476,857,448.00   6.80  
+10 $451,100,435.00   7.10  
+# ℹ 86 more rows
+# ℹ Use `print(n = ...)` to see more rows
+-/                                                                                                                          /                                                                                                                          -                                                                                                                          
+Call:
+lm(formula = Rating ~ `$Worldwide`, data = Rev_World)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.4036 -0.1877  0.3516  0.7040  3.3022 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  6.387e+00  1.344e-01  47.539   <2e-16 ***
+`$Worldwide` 1.330e-09  5.749e-10   2.314   0.0217 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.675 on 186 degrees of freedom
+  (12 observations deleted due to missingness)
+Multiple R-squared:  0.02799,	Adjusted R-squared:  0.02276 
+F-statistic: 5.356 on 1 and 186 DF,  p-value: 0.02175
+

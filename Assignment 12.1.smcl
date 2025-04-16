@@ -1,0 +1,187 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/benc/Documents/Stata/Assignment 12.1.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 9 Oct 2023, 15:42:13
+
+{com}. do "/var/folders/6m/bfm842v57jb1p_tg1x_w975w0000gn/T//SD07281.000000"
+{txt}
+{com}. 
+. ****Ben Chima****
+. ***Econometrics II***
+. 
+. 
+. clear all
+{res}{txt}
+{com}. ******STATA ASSINGNMENT*****
+. ******EXCERCISE 12.1********
+. 
+. *All answers will be in the format *|______|*
+. 
+. use "/Users/benc/Documents/Stata/fertility.dta"
+{txt}
+{com}. 
+. *(A)*
+. rename weeksm1 weeksworked
+{res}{txt}
+{com}. 
+. reg weeksworked morekids, r 
+
+{txt}Linear regression                               Number of obs     = {res}   254,654
+                                                {txt}F(1, 254652)      =  {res}  3820.91
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0143
+                                                {txt}Root MSE          =    {res}  21.71
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1} weeksworked{col 14}{c |} Coefficient{col 26}  std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}morekids {c |}{col 14}{res}{space 2}-5.386996{col 26}{space 2} .0871491{col 37}{space 1}  -61.81{col 46}{space 3}0.000{col 54}{space 4}-5.557806{col 67}{space 3}-5.216186
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 21.06843{col 26}{space 2} .0560681{col 37}{space 1}  375.76{col 46}{space 3}0.000{col 54}{space 4} 20.95854{col 67}{space 3} 21.17832
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *On average women with more than two kids do tend to work less, about |-5.386996| weeks less than women with less than 2 kids.*
+. 
+. *(B)*
+. 
+. *It is becasue we want A1 to hold. That is that there is strict causality between our x variable(amount of kids), and our u variable(# of weeks worked).*
+. 
+. *(C)*
+. 
+. reg morekids samesex, r
+
+{txt}Linear regression                               Number of obs     = {res}   254,654
+                                                {txt}F(1, 254652)      =  {res}  1238.17
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0048
+                                                {txt}Root MSE          =    {res} .48435
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}    morekids{col 14}{c |} Coefficient{col 26}  std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}samesex {c |}{col 14}{res}{space 2} .0675253{col 26}{space 2}  .001919{col 37}{space 1}   35.19{col 46}{space 3}0.000{col 54}{space 4} .0637641{col 67}{space 3} .0712865
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .3464248{col 26}{space 2}  .001341{col 37}{space 1}  258.34{col 46}{space 3}0.000{col 54}{space 4} .3437965{col 67}{space 3} .3490531
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *The effect doesnt seem to be large since the coefficient is |.0675253|, but is very significant since the t-stat is |35.19|.*
+. 
+. *(D)*
+. 
+. *Well samesex seems to meet the two requirements of a good instrument. For one it is clearly correlated strongly with the x variable we want to use in our equation(morekids). The second reason is that it only effects our u variable (weeksworked) through the x variable since you will already have to have two kids, whether they are same sex or not, to have more than two kids. If that makes sense*
+. 
+. *(E)*
+. 
+. *You could say that samesex could be classified as a weak instrument since it has a very small effect, although significant.*
+. 
+. *(F)*
+. 
+. ivreg weeksworked (morekids = samesex), first
+
+{txt}First-stage regressions
+{hline 23}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}   254,654
+{txt}{hline 13}{c +}{hline 34}   F(1, 254652)    = {res}  1237.22
+{txt}       Model {c |} {res} 290.247937         1  290.247937   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 59740.5888   254,652  .234596975   {txt}R-squared       ={res}    0.0048
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0048
+{txt}       Total {c |} {res} 60030.8368   254,653  .235735832   {txt}Root MSE        =   {res} .48435
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    morekids{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}samesex {c |}{col 14}{res}{space 2} .0675253{col 26}{space 2} .0019197{col 37}{space 1}   35.17{col 46}{space 3}0.000{col 54}{space 4} .0637626{col 67}{space 3} .0712879
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .3464248{col 26}{space 2}  .001365{col 37}{space 1}  253.79{col 46}{space 3}0.000{col 54}{space 4} .3437494{col 67}{space 3} .3491002
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+
+{txt}Instrumental variables 2SLS regression
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}   254,654
+{txt}{hline 13}{c +}{hline 34}   F(1, 254652)    = {res}    24.54
+{txt}       Model {c |} {res} 1690526.44         1  1690526.44   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  120078889   254,652  471.541119   {txt}R-squared       ={res}    0.0139
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0139
+{txt}       Total {c |} {res}  121769415   254,653  478.177816   {txt}Root MSE        =   {res} 21.715
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1} weeksworked{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}morekids {c |}{col 14}{res}{space 2}-6.313685{col 26}{space 2} 1.274604{col 37}{space 1}   -4.95{col 46}{space 3}0.000{col 54}{space 4}-8.811875{col 67}{space 3}-3.815496
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 21.42109{col 26}{space 2} .4869726{col 37}{space 1}   43.99{col 46}{space 3}0.000{col 54}{space 4} 20.46664{col 67}{space 3} 22.37555
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{p 0 14 10}Instrumented: {res:morekids}{p_end}
+{p 0 14 10}{space 1}Instruments: {res:samesex}{p_end}
+
+{com}. 
+. *It seems very clear that if you have more than 2 kids you are likely to work |-6.313685| less weeks than others that have less than 3 kids.*
+. 
+. 
+. *(G)*
+. 
+. ivreg weeksworked (morekids = samesex agem1 black hispan othrace), first
+
+{txt}First-stage regressions
+{hline 23}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}   254,654
+{txt}{hline 13}{c +}{hline 34}   F(5, 254648)    = {res}  1262.09
+{txt}       Model {c |} {res} 1451.65094         5  290.330189   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 58579.1858   254,648  .230039843   {txt}R-squared       ={res}    0.0242
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0242
+{txt}       Total {c |} {res} 60030.8368   254,653  .235735832   {txt}Root MSE        =   {res} .47962
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    morekids{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}samesex {c |}{col 14}{res}{space 2} .0680081{col 26}{space 2}  .001901{col 37}{space 1}   35.77{col 46}{space 3}0.000{col 54}{space 4} .0642821{col 67}{space 3} .0717341
+{txt}{space 7}agem1 {c |}{col 14}{res}{space 2} .0153898{col 26}{space 2} .0002814{col 37}{space 1}   54.68{col 46}{space 3}0.000{col 54}{space 4} .0148382{col 67}{space 3} .0159415
+{txt}{space 7}black {c |}{col 14}{res}{space 2} .1005237{col 26}{space 2} .0043058{col 37}{space 1}   23.35{col 46}{space 3}0.000{col 54}{space 4} .0920844{col 67}{space 3} .1089629
+{txt}{space 6}hispan {c |}{col 14}{res}{space 2} .1512258{col 26}{space 2} .0040119{col 37}{space 1}   37.69{col 46}{space 3}0.000{col 54}{space 4} .1433625{col 67}{space 3} .1590892
+{txt}{space 5}othrace {c |}{col 14}{res}{space 2} .0275069{col 26}{space 2} .0045537{col 37}{space 1}    6.04{col 46}{space 3}0.000{col 54}{space 4} .0185817{col 67}{space 3} .0364321
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-.1395319{col 26}{space 2} .0086985{col 37}{space 1}  -16.04{col 46}{space 3}0.000{col 54}{space 4}-.1565808{col 67}{space 3} -.122483
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+
+{txt}Instrumental variables 2SLS regression
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}   254,654
+{txt}{hline 13}{c +}{hline 34}   F(1, 254652)    = {res}  1606.85
+{txt}       Model {c |} {res}  -68136440         1   -68136440   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  189905855   254,652  745.746569   {txt}R-squared       ={res}         .
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}         .
+{txt}       Total {c |} {res}  121769415   254,653  478.177816   {txt}Root MSE        =   {res} 27.308
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1} weeksworked{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}morekids {c |}{col 14}{res}{space 2} 28.73109{col 26}{space 2} .7167448{col 37}{space 1}   40.09{col 46}{space 3}0.000{col 54}{space 4} 27.32629{col 67}{space 3} 30.13589
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 8.084333{col 26}{space 2} .2780831{col 37}{space 1}   29.07{col 46}{space 3}0.000{col 54}{space 4} 7.539297{col 67}{space 3} 8.629368
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{p 0 14 10}Instrumented: {res:morekids}{p_end}
+{p 0 14 10}{space 1}Instruments: {res:samesex agem1 black hispan othrace}{p_end}
+
+{com}. 
+. *I feel that I may have ran the regression wrong becuase it seems that the coefficienct is now very positive at |28.73109|. Meaning they would work more weeks than other mothers. Unless this is implying that this specific instrument isn't very effective.*
+. 
+. 
+. *******THANK YOU FOR VIEWING************
+. 
+. 
+. 
+. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/benc/Documents/Stata/Assignment 12.1.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 9 Oct 2023, 15:42:29
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

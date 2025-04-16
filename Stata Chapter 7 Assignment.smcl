@@ -1,0 +1,132 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/benc/Documents/Stata/Stata Chapter 7 Assignment.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}14 Sep 2023, 18:00:59
+
+{com}. do "/Users/benc/Documents/Stata/Chapter 7 Assignment.do"
+{txt}
+{com}. ***Ben Chima***
+. ***Econometrics II***
+. 
+. clear all
+{res}{txt}
+{com}. ***************STATA ASSIGNMENT CH 7****************
+. 
+. ****************EXCERCISE 7.1***********************
+. *Also I want to add that all answers will be in this format --- *|______|*
+. ** I do not know how to display them any other way to make them more obvious so I will use the bars to distinguish my thought process from my actual answers**
+. 
+. use "/Users/benc/Documents/Stata/birthweight_smoking.dta"
+{txt}
+{com}. 
+. *** #1 ***
+. 
+. reg birthweight smoker, r
+
+{txt}Linear regression                               Number of obs     = {res}     3,000
+                                                {txt}F(1, 2998)        =  {res}    89.21
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0286
+                                                {txt}Root MSE          =    {res} 583.73
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1} birthweight{col 14}{c |} Coefficient{col 26}  std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}smoker {c |}{col 14}{res}{space 2}-253.2284{col 26}{space 2} 26.81039{col 37}{space 1}   -9.45{col 46}{space 3}0.000{col 54}{space 4} -305.797{col 67}{space 3}-200.6597
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}  3432.06{col 26}{space 2} 11.89053{col 37}{space 1}  288.64{col 46}{space 3}0.000{col 54}{space 4} 3408.746{col 67}{space 3} 3455.374
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *** #2 ***
+. 
+. reg birthweight smoker alcohol nprevist, r 
+
+{txt}Linear regression                               Number of obs     = {res}     3,000
+                                                {txt}F(3, 2996)        =  {res}    59.48
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0729
+                                                {txt}Root MSE          =    {res} 570.47
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1} birthweight{col 14}{c |} Coefficient{col 26}  std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}smoker {c |}{col 14}{res}{space 2}-217.5801{col 26}{space 2} 26.10764{col 37}{space 1}   -8.33{col 46}{space 3}0.000{col 54}{space 4}-268.7708{col 67}{space 3}-166.3894
+{txt}{space 5}alcohol {c |}{col 14}{res}{space 2}-30.49129{col 26}{space 2} 72.59671{col 37}{space 1}   -0.42{col 46}{space 3}0.675{col 54}{space 4}-172.8357{col 67}{space 3} 111.8531
+{txt}{space 4}nprevist {c |}{col 14}{res}{space 2} 34.06991{col 26}{space 2} 3.608326{col 37}{space 1}    9.44{col 46}{space 3}0.000{col 54}{space 4} 26.99487{col 67}{space 3} 41.14496
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 3051.249{col 26}{space 2} 43.71445{col 37}{space 1}   69.80{col 46}{space 3}0.000{col 54}{space 4} 2965.535{col 67}{space 3} 3136.962
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *** #3 ***
+. 
+. reg birthweight smoker alcohol nprevist unmarried, r 
+
+{txt}Linear regression                               Number of obs     = {res}     3,000
+                                                {txt}F(4, 2995)        =  {res}    56.09
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0886
+                                                {txt}Root MSE          =    {res}  565.7
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1} birthweight{col 14}{c |} Coefficient{col 26}  std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}smoker {c |}{col 14}{res}{space 2}-175.3769{col 26}{space 2}  26.8268{col 37}{space 1}   -6.54{col 46}{space 3}0.000{col 54}{space 4}-227.9777{col 67}{space 3}-122.7761
+{txt}{space 5}alcohol {c |}{col 14}{res}{space 2}-21.08347{col 26}{space 2} 72.99211{col 37}{space 1}   -0.29{col 46}{space 3}0.773{col 54}{space 4}-164.2032{col 67}{space 3} 122.0363
+{txt}{space 4}nprevist {c |}{col 14}{res}{space 2} 29.60254{col 26}{space 2} 3.582739{col 37}{space 1}    8.26{col 46}{space 3}0.000{col 54}{space 4} 22.57766{col 67}{space 3} 36.62742
+{txt}{space 3}unmarried {c |}{col 14}{res}{space 2}-187.1332{col 26}{space 2} 27.67715{col 37}{space 1}   -6.76{col 46}{space 3}0.000{col 54}{space 4}-241.4014{col 67}{space 3}-132.8651
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}   3134.4{col 26}{space 2} 44.14857{col 37}{space 1}   71.00{col 46}{space 3}0.000{col 54}{space 4} 3047.835{col 67}{space 3} 3220.965
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *** a) ***
+. 
+. *For the regression of birthweight on smoker the estimated effect is |-253.2284|. For birthweight on smoker, alcohol, and nprevist the value is |-217.5801|. For birthweight on smoker, alcohol, nprevist, and unmarried it is |-175.3769|.*
+. 
+. *** b) *** 
+. 
+. *Stata automatically gives the 95% confidence interval as well as the robust standard error.*
+. 
+. *For birthweight on smoker the interval is {c -(}-305.797, -200.6597{c )-} *
+. *For birthweight on smoker, alcohol, and nprevist it is {c -(}-268.7708, -166.3894{c )-}*
+. *For birthweight on smoker, alcohol, nprevist, and unmarried it is {c -(}-227.9777, -122.7761{c )-}*
+. 
+. *** c) ***
+. 
+. *It does seem to suffer from omitted variable bias. The R-Squared is usually used to determine the usefullness or effectiveness of a regression and for the first regression excluding alcohol and nprevist the R-Squared was 0.0286. In the second regression including all independent variables the regression was 0.0729. More than double the R-Squared of the first one and much closer to one. It's only explaining 7.3% of the data but that's better than only explaining 2.9%. The R-Squared values are so similar because they have very large n values at n=3000*
+. 
+. *** d) ***
+. 
+. *This regression is also likely to suffer from omitted variable bias because the 'unmaried' variable is likely to be correlated with all the other variables but is being left out.*
+. 
+. *** e) ***
+. 
+. *(i) already constructed the 95% confidence interval, check the answer for (b)*
+. 
+. *(ii) since the p-value is less than 0.05 in the output we can say it is statistically significant.*
+. 
+. *(iii) it is relatively small considering the other values are positive numbers but its absolute value is much larger than the others. It all depends on the data, (i.e depending on if a 0 or 1 represents marrige the coefficient could be positive or negative considering the estimated effect repesents the slope.) So it is relatively larger than the others. *
+. 
+. *(iv) Hypothetically, public policy encouraging marrige could be effected, but there are still other variables at play that could be effecting our results.*
+. 
+. *** f) ***
+. 
+. * Age and Drinks are must adds to the regression. If drinks means amount of alcoholic drinks during pregnancy that is. Education could be included since education level could have an impact on marrige and that is one of the main variables effecting birthweight*
+. 
+. ********THIS CONCLUDES STATA ASSIGNMENT 7.1************
+. ******THANK YOU FOR VIEWING*********
+. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/benc/Documents/Stata/Stata Chapter 7 Assignment.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}14 Sep 2023, 18:01:22
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
